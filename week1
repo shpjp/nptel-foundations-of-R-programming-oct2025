@@ -1,0 +1,108 @@
+Which of the following command is used to get help on the mean function?
+ "?mean"
+ ?mean
+ '?mean'
+ mean?
+Yes, the answer is correct.
+Score: 1
+Accepted Answers:
+?mean
+1 point
+
+Which of the following is the correct option to provide help in R?
+ help.search()
+ start.help()
+ help.start()
+ search.help()
+Yes, the answer is correct.
+Score: 1
+Accepted Answers:
+help.start()
+1 point
+
+Which of the following function provides the demonstration of the package xlsx in R?
+ demo(xlsx)
+ Demo(‘xlsx’)
+ demos(xlsx)
+ demo(!xlsx)
+Yes, the answer is correct.
+Score: 1
+Accepted Answers:
+demo(xlsx)
+1 point
+
+Which of the function provides the help on finding an example on the function lm?
+ expl("lm")
+ example(lm)
+ show.example(lm)
+ show.example("lm")
+Yes, the answer is correct.
+Score: 1
+Accepted Answers:
+example(lm)
+1 point
+
+Which of the function provides the help in finding the contents of the library boot?
+ library(help=boot)
+ Library(help="boot")
+ library(help='?boot')
+ library(help=boot?)
+Yes, the answer is correct.
+Score: 1
+Accepted Answers:
+library(help=boot)
+1 point
+
+Which of the following command installs the package xlsx?
+ install(xlsx)
+ install.packages("xlsx")
+ install.package(xlsx)
+ install.package("xlsx")
+Yes, the answer is correct.
+Score: 1
+Accepted Answers:
+install.packages("xlsx")
+1 point
+
+Which of the following command is used to update the package xlsx?
+ update.package(xlsx)
+ update.packages("xlsx")
+ update.packages(xlsx?)
+ update.package("xlsx")
+Yes, the answer is correct.
+Score: 1
+Accepted Answers:
+update.packages("xlsx")
+1 point
+
+Which of the following command detaches the package lattice?
+ detach.packages(package:lattice, unload=TRUE)
+ detach.package("package:lattice", unload=TRUE)
+ Detach("package:lattice", unload=FALSE)
+ detach("package:lattice", unload=TRUE)
+Yes, the answer is correct.
+Score: 1
+Accepted Answers:
+detach("package:lattice", unload=TRUE)
+1 point
+
+Which of the following command removes the package xlsx?
+ remove.packages(xlsx)
+ remove.packages("xlsx")
+ remove.packages(xlsx?)
+ remove.package("xlsx")
+Yes, the answer is correct.
+Score: 1
+Accepted Answers:
+remove.packages("xlsx")
+1 point
+
+Which of the following command provides the description of the package MASS?
+ packagedescription("MASS")
+ packageDescribe("MASS")
+ PackageDescription("MASS")
+ packageDescription("MASS")
+Yes, the answer is correct.
+Score: 1
+Accepted Answers:
+packageDescription("MASS")
