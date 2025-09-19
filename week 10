@@ -1,0 +1,229 @@
+Q1. Which one of the following is the correct outcome of the command
+sub("1400", "1550", "We have 1400 learners in this course.") ?
+
+    a) [1] "We have 1400 learners in this course."
+    b) [1] "We have 1400-1550 learners in this course."
+    c) [1] "We have 1550 learners in this course."
+    d) [1] "We have 14001550 learners in this course."
+1 point
+
+
+Q2. Which one of the following is the correct outcome of the command
+gsub("Evening", "Morning", "Evening sunlight is good for health.")?
+
+    a) [1] "EveningMorning sunlight is good for health."
+    b) [1] "Morning sunlight is good for health."
+    c) [1] "Evening sunlight is good for health."
+    d) [1] "Morning sunlight is good for health." "Evening"
+1 point
+
+
+Q3. Which one of the following is the correct outcome of the command
+grep("safe", c("safer", "secure", "safety", "safest", "security")) ?
+
+    a) [1] "safer" "safety" "safest"
+    b) [1] "safety" "safest"
+    c) [1] 1 4
+    d) [1] 1 3 4
+1 point
+
+
+Q4. Which one of the following is the correct outcome of the command
+grep("[r-u]", letters) ?
+
+    a) [1] r-s-t-u
+    b) [1] r s t u
+    c) [1] 18-19-20-21
+    d) [1] 18 19 20 21
+1 point
+
+
+Q5. Which one of the following is the correct outcome of the command
+grepl("temperature",x)  
+where x=c("Average temperature in Rajasthan", "Average temperature in Himachal Pradesh", "is 40 degree Celsius. is 20 degree Celsius.") ?
+
+    a) TRUE  TRUE FALSE
+    b) TRUE
+    c) FALSE
+    d) FALSE FALSE TRUE
+1 point
+
+
+Q6. Which one of the following are the respective correct commands to obtain the names of columns and rows in a data frame iris ? 
+
+    a) colnames(iris) and  rownames(iris)
+    b) colname(iris) and  rowname(iris)
+    c) coln(iris) and  rown(iris)
+    d) cnames(iris) and  rnames(iris)
+1 point
+
+
+Q7. Which one of the following is the correct command to obtain the dimension, name, and type of each variable in a data frame painters ?
+
+    a) description(painters)
+    b) desc(painters)
+    c) str(painters)
+    d) stringname(painters)
+1 point
+
+
+Q8. Which one of the following is the correct command to extract the variable type from a data frame painters ?
+
+    a) type$painters
+    b) name(painters-type)
+    c) name(type$painters)
+    d) painters$type
+1 point
+
+
+Q9. Which one of the following is the correct command to extract ten data points from 10th to 19th contained in the variable class from a data frame schools?
+
+    a) class$schools[10:19]
+    b) schools$class[10:19]
+    c) schools$class[10,19]
+    d) [schools,class](10,19)
+1 point
+
+
+Q10. Which one of the following is respectively the correct command to draw information on those painters who have used the "Colour" coded as 16 and are from "School" A from the data frame painters and what is the corresponding outcome?
+
+    a) subset(painters, Colour==16 & School==A) 
+       and
+                           Composition Drawing Colour Expression School
+       Da Udine            10       8     16          3      A
+       Del Piombo           8      13     16          7      A
+
+    b) subset(painters, Colour=16 & School=A)
+       and
+               Composition Drawing Expression  
+       Da Udine        10       8          3
+       Del Piombo       8      13          7
+
+    c) subset(painters, Colour=='16' & School=='A')
+       and
+                           Composition Drawing Colour Expression School
+       Da Udine            10       8     16          3      A
+       Del Piombo           8      13     16          7      A
+
+    d) subset(painters, Colour=='16' and School=='A')
+       and
+               Composition Drawing Expression  
+       Da Udine        10       8          3
+       Del Piombo       8      13          7
+1 point
+
+
+Q11. Which one of the following is respectively the correct command to draw the information on those painters who have used the "Composition" as 10 and "Expression" is less than 11 and what is the output from the data frame painters?
+
+    a) subset(painters, Composition =='10' & Expression < 11) 
+       and
+                    Drawing Colour School
+       Da Udine       8      16      A
+       F. Zucarro     13      8      B
+       Parmigiano     15      6      B
+       Josepin        10      6      C
+       J. Jordaens     8     16      G
+       Bourdon         8      8      H
+
+    b) subset(painters, Composition =='10' & Expression < 11) 
+       and
+                           Composition Drawing Colour Expression School
+       Da Udine             10       8     16          3      A
+       F. Zucarro           10      13      8          8      B
+       Parmigiano           10      15      6          6      B
+       Josepin              10      10      6          2      C
+       J. Jordaens          10       8     16          6      G
+       Bourdon              10       8      8          4      H 
+
+    c) subset(painters, Composition ='10' & Expression < '11') 
+       and
+       (large painter dataset output …)
+
+    d) subset(painters, Composition =10 & Expression < 11)
+       and
+       (large painter dataset output …)
+1 point
+
+
+Q12. Which one of the following are respectively the correct commands to draw the information and output on those painters who have used the "Colour" coded as 4 , "School" as A when information on the variables "Drawing" and "Expression" is removed from the data frame painters and its corresponding outcome?
+
+    a) subset(painters, School=A & Colour=4, select=c(-2,-4))
+       and
+                               Composition Colour School
+       Da Vinci               15      4      A
+       Guilio Romano          15      4      A
+       Michelangelo            8      4      A
+
+    b) subset(painters, School=="A" & Colour=="4", select=c(-2,-4))
+       and
+                               Composition Drawing Colour Expression School
+       Da Vinci               15      16      4         14      A
+       Guilio Romano          15      16      4         14      A
+       Michelangelo            8      17      4          8      A
+
+    c) subset(painters, School=A & Colour=4, select=c(-2,-4))
+       and
+                      Composition Drawing Colour Expression School
+       Da Vinci               15      16      4         14      A
+       Guilio Romano          15      16      4         14      A
+       Michelangelo            8      17      4          8      A
+
+    d) subset(painters, School=="A" & Colour=="4", select=c(-2,-4))
+       and
+                               Composition Colour School
+       Da Vinci               15      4      A
+       Guilio Romano          15      4      A
+       Michelangelo            8      4      A
+1 point
+
+
+Q13. Suppose x = c("Apple", "Oranges", "Banana", "Apricot")  
+and y = c(20, 30, 40, 50)  
+then which of the following is the correct outcome of the command rbind(x,y) when executed in R console?
+
+    a)   [,1]    [,2]      [,3]     [,4]     
+       x "Apple" "Oranges" "Banana" "Apricot"
+       y "20"    "30"      "40"     "50"    
+
+    b)       x         y   
+       [1,] "Apple"   "20"
+       [2,] "Oranges" "30"
+       [3,] "Banana"  "40"
+       [4,] "Apricot" "50"
+
+    c)   [,1]    [,2]      [,3]     [,4]     
+       y "20"    "30"      "40"     "50"    
+       x "Apple" "Oranges" "Banana" "Apricot"
+
+    d)          y    x        
+       [1,] "20" "Apple"  
+       [2,] "30" "Oranges"
+       [3,] "40" "Banana" 
+       [4,] "50" "Apricot"
+1 point
+
+
+Q14. Suppose x = c("Apple", "Oranges", "Banana", "Apricot")  
+and y = c(20, 30, 40, 50)  
+then which of the following is the correct outcome of the command cbind(y,x) when executed in R console?
+
+    a)   [,1]    [,2]      [,3]     [,4]     
+       x "Apple" "Oranges" "Banana" "Apricot"
+       y "20"    "30"      "40"     "50"    
+
+    b)       x         y   
+       [1,] "Apple"   "20"
+       [2,] "Oranges" "30"
+       [3,] "Banana"  "40"
+       [4,] "Apricot" "50"
+
+    c)   [,1]    [,2]      [,3]     [,4]     
+       y "20"    "30"      "40"     "50"    
+       x "Apple" "Oranges" "Banana" "Apricot"
+
+    d)         y    x        
+       [1,] "20" "Apple"  
+       [2,] "30" "Oranges"
+       [3,] "40" "Banana" 
+       [4,] "50" "Apricot"
+1 point
